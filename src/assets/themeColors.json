@@ -1,0 +1,12 @@
+{
+  "whiteLight": "#fffffc",
+  "backgroundLight": "#fffdf1",
+  "white": "#e6e4d9",
+  "darkerWhite": "#cccac1",
+  "black": "#1d1e2c",
+  "backgroundDark": "#343541",
+  "lighterDark": "#61626b",
+  "grey": "#777880",
+  "accentLight": "#bdafa5",
+  "accent": "#aa988c"
+}

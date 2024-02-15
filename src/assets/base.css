@@ -1,0 +1,70 @@
+/* color palette from <https://github.com/vuejs/theme> */
+
+@font-face {
+  font-family: 'Clash Display Variable';
+  src: url('ClashDisplay_Complete/Fonts/Variable/ClashDisplay-Variable.ttf');
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('PlusJakartaSans_Complete/PlusJakartaSans-VariableFont_wght.ttf');
+}
+
+:root {
+  --white-light: #fffffc;
+  --background-light: #fffdf1;
+  --white: #e6e4d9;
+  --darker-white: #cccac1;
+
+  --black: #1d1e2c;
+  --background-dark: #343541;
+  --lighter-dark: #61626b;
+  --grey: #777880;
+
+  --accent-light: #bdafa5;
+  --accent: #aa988c;
+}
+
+/* semantic color variables for this project */
+:root {
+  --background-color: var(--background-light);
+
+  --contrast-hard-color: var(--black);
+  --contrast-color: var(--background-dark);
+  --contrast-low-color: var(--lighter-dark);
+  --contrast-minimal-color: var(--grey);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  max-width: 100vw;
+
+  color: var(--contrast-color);
+  background-color: var(--background-light);
+
+  line-height: normal;
+  font-family:
+    'Plus Jakarta Sans',
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 23px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
