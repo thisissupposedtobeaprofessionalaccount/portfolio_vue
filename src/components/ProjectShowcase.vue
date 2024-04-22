@@ -11,8 +11,11 @@ const props = defineProps([
   'previewHeight',
   'gridWidth',
   'splineUrl',
+  'is3D',
   'on3dLoaded'
 ])
+
+
 const canvas3d = ref(null)
 
 onMounted(async () => {
@@ -22,7 +25,11 @@ onMounted(async () => {
 </script>
 <template>
   <div class="project-showcase">
-    <div class="preview"><img :src="src" /><canvas ref="canvas3d"></canvas></div>
+    <div class="preview">
+      <img :src="src" />
+      <canvas ref="canvas3d" v-if="is3D"></canvas>
+      <img :src="non3dSrc" v-if="!is3D" />
+    </div>
     <div class="tech">
       <TechChip v-for="techno in technos" :key="techno">
         {{ techno }}

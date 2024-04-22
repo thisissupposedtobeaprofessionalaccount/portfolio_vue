@@ -77,6 +77,7 @@ onMounted(() => {
         title="PEEKED"
         description="engineering and development for a camera trap visualization app"
         spline-url="/src/assets/spline/peeked.splinecode"
+        :is3D="true"
         :on3d-loaded="
           (app) => {
             const phone = app.findObjectByName('phone')
@@ -93,6 +94,7 @@ onMounted(() => {
         title="PicPals"
         description="time-based social network for artists"
         spline-url="/src/assets/spline/picpals.splinecode"
+        :is3D="false"
       ></ProjectShowcase>
       <ProjectShowcase
         style="grid-column: 6 / 11"
@@ -102,6 +104,7 @@ onMounted(() => {
         title="3D software maintenance"
         description="internship at Ice Development"
         spline-url="/src/assets/spline/cppproj.splinecode"
+        :is3D="true"
         :on3d-loaded="
           (app) => {
             const phone = app.findObjectByName('computer')
@@ -116,7 +119,7 @@ onMounted(() => {
         :technos="['Flutter', 'NMEA2000']"
         title="App for boaters"
         description="front end mobile development at Amiltone"
-        spline-url="/src/assets/spline/water.splinecode"
+        :is3D="false"
       ></ProjectShowcase>
       <ProjectShowcase
         style="grid-column: 8 / 11; margin-bottom: 250px"
@@ -125,7 +128,7 @@ onMounted(() => {
         :technos="['Vue.js', 'GSAP', 'Figma']"
         title="This site"
         description="design and development"
-        spline-url="/src/assets/spline/site.splinecode"
+        :is3D="false"
       ></ProjectShowcase>
     </div>
   </div>

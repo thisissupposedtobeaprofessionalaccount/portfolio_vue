@@ -75,6 +75,7 @@ onMounted(() => {
   min-height: 100vh;
   gap: 20px;
   padding-top: 217px;
+  padding-bottom: 100px;
 }
 
 .intro-content {
