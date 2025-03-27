@@ -2,7 +2,9 @@
 </script>
 
 <template>
-  <router-view></router-view>
+  <main>
+    caca
+  </main>
 </template>
 
 <style>
