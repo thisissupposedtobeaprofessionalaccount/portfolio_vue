@@ -96,9 +96,9 @@ onMounted(() => {
     <div class="contact-content">
       <h2 class="contact-title">WANT TO BRING LIFE TO YOUR PROJECTS ?</h2>
       <p class="personnal-intro">
-        I am currently working at Amiltone, Lyon, France. But you can still contact me.
+        I am currently studying at INSA Lyon. You can still contact me.
       </p>
-      <ContactForm id="contact-form"></ContactForm>
+      <!--<ContactForm id="contact-form"></ContactForm>-->
       <ContactPanel id="contact-panel"></ContactPanel>
     </div>
   </div>

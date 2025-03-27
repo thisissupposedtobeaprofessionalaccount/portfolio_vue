@@ -14,6 +14,7 @@ import themeColor from '@/assets/themeColors.json'
   border: solid 2px v-bind('themeColor.white');
   width: min-content;
   transition: all 0.2s ease;
+  max-height: 55px;
 }
 .chip:hover {
   color: v-bind('themeColor.backgroundDark');
@@ -22,8 +23,9 @@ import themeColor from '@/assets/themeColors.json'
   transition: all 0.2s ease;
 }
 ::slotted {
-  height: 50px;
-  width: min-content;
+  height: fit-content;
+  width: max-content;
   color: red;
+  max-height: 55px;
 }
 </style>

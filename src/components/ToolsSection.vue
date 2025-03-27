@@ -136,7 +136,7 @@ h5 {
   color: v-bind('themeColor.accent');
   display: flex;
   flex-wrap: wrap;
-  gap: 24%;
+  gap: 23%;
 }
 .sector-content p {
   width: 250px;

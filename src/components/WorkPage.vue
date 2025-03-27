@@ -131,10 +131,34 @@ onMounted(() => {
         :is3D="false"
       ></ProjectShowcase>
     </div>
+    <a><router-link to='/projects'>Discover more.</router-link></a>
   </div>
 </template>
 
 <style scoped>
+a {
+  grid-column: 10 / 11;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  transition: color ease 0.2s;
+}
+a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: v-bind('themeColor.accent');
+  transition: width 0.3s;
+}
+a:hover::after {
+  text-decoration: none;
+  color: v-bind('themeColor.accent');
+  transition: color ease 0.2s;
+  width: 100%;
+  transition: width 0.3s;
+}
+
 .work-page {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
