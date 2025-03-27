@@ -1,0 +1,45 @@
+[
+  {
+    "title": "PEEKED",
+    "src": "/src/assets/images/green_gradient.png",
+    "technos": ["Vue.js", "Express.js", "Docker", "Figma", "ESP-8266"],
+    "description": "engineering and development for a camera trap visualization app",
+    "spline-url": "/src/assets/spline/peeked.splinecode"
+  },
+  {
+    "title": "PicPals",
+    "src": "/src/assets/images/pink_gradient.png",
+    "technos": ["Flutter", "Express.js", "MongoDB"],
+    "description": "time-based social network for artists",
+    "spline-url": "/src/assets/spline/picpals.splinecode"
+  },
+  {
+    "title": "3D software maintenance",
+    "src": "/src/assets/images/red_gradient.png",
+    "technos": ["cpp", "Ogre3D", "SQL"],
+    "description": "internship at Ice Development",
+    "spline-url": "/src/assets/spline/cppproj.splinecode"
+  },
+  {
+    "title": "App for boaters",
+    "src": "/src/assets/images/blue_gradient.png",
+    "technos": ["Flutter", "NMEA2000"],
+    "description": "front end mobile development at Amiltone"
+  },
+  {
+    "title": "This site",
+    "src": "/src/assets/images/yellow_gradient.png",
+    "technos": ["Vue.js", "GSAP", "Figma"],
+    "description": "design and development"
+  },
+  {
+    "title": "Remote Access Tool",
+    "technos": ["Rust", "TCP", "Shell"],
+    "description": "Design & development of a RAT client controlled via instructions avaialable on a server."
+  },
+  {
+    "title": "Homelab using Proxmox",
+    "technos": ["Proxmox", "VLAN", "Docker", "LXC", "VPN", "Reverse Proxy"],
+    "description": "Deployment and self-hosted services"
+  }
+]

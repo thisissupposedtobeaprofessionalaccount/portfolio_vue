@@ -24,7 +24,7 @@ import WorkPage from './WorkPage.vue'
 </template>
 
 <style>
-header {
+main {
   --selectedBackgroundColor: transparent;
   z-index: 999;
   position: sticky;
@@ -32,10 +32,4 @@ header {
   left: 0;
   background-color: var(--background-light);
 }
-</style>
-<style scoped>
-main {
-  overflow: hidden;
-}
-
 </style>
