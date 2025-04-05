@@ -72,11 +72,11 @@ onMounted(() => {
       <ProjectShowcase
         style="grid-column: 2 / 10; margin-bottom: 141px"
         preview-height="493px"
-        src="/src/assets/images/green_gradient.png"
+        src="/images/green_gradient.png"
         :technos="['Vue.js', 'Express.js', 'Docker', 'Figma', 'ESP-8266']"
         title="PEEKED"
         description="engineering and development for a camera trap visualization app"
-        spline-url="/src/assets/spline/peeked.splinecode"
+        spline-url="/spline/peeked.splinecode"
         is3D
         :on3d-loaded="
           (app) => {
@@ -89,21 +89,21 @@ onMounted(() => {
       <ProjectShowcase
         style="grid-column: 1 / 5"
         preview-height="582px"
-        src="/src/assets/images/pink_gradient.png"
+        src="/images/pink_gradient.png"
         :technos="['Flutter', 'Express.js', 'MongoDB']"
         title="PicPals"
         description="time-based social network for artists"
-        spline-url="/src/assets/spline/picpals.splinecode"
+        spline-url="/spline/picpals.splinecode"
         :is3D="false"
       ></ProjectShowcase>
       <ProjectShowcase
         style="grid-column: 6 / 11"
         preview-height="443px"
-        src="/src/assets/images/red_gradient.png"
+        src="/images/red_gradient.png"
         :technos="['cpp', 'Ogre3D', 'SQL']"
         title="3D software maintenance"
         description="internship at Ice Development"
-        spline-url="/src/assets/spline/cppproj.splinecode"
+        spline-url="/spline/cppproj.splinecode"
         :is3D="true"
         :on3d-loaded="
           (app) => {
@@ -115,7 +115,7 @@ onMounted(() => {
       <ProjectShowcase
         style="grid-column: 1 / 7; margin-top: 148px"
         preview-height="458px"
-        src="/src/assets/images/blue_gradient.png"
+        src="/images/blue_gradient.png"
         :technos="['Flutter', 'NMEA2000']"
         title="App for boaters"
         description="front end mobile development at Amiltone"
@@ -124,7 +124,7 @@ onMounted(() => {
       <ProjectShowcase
         style="grid-column: 8 / 11; margin-bottom: 250px"
         preview-height="560px"
-        src="/src/assets/images/yellow_gradient.png"
+        src="/images/yellow_gradient.png"
         :technos="['Vue.js', 'GSAP', 'Figma']"
         title="This site"
         description="design and development"

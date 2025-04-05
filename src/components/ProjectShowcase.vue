@@ -25,6 +25,7 @@ onMounted(async () => {
 })
 
 const hasImg = props.non3dSrc.length !== 0 ;
+
 </script>
 <template>
   <div class="project-showcase">

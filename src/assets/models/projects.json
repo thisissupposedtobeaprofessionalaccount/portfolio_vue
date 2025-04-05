@@ -1,54 +1,54 @@
 [
   {
     "title": "PEEKED",
-    "src": "/src/assets/images/green_gradient.png",
+    "src": "/images/green_gradient.png",
     "technos": ["Vue.js", "Express.js", "Docker", "Figma", "ESP-8266"],
     "description": "engineering and development for a camera trap visualization app",
-    "spline-url": "/src/assets/spline/peeked.splinecode",
-    "image": "/src/assets/images/peeked.png"
+    "spline-url": "/spline/peeked.splinecode",
+    "image": "/images/peeked.png"
   },
   {
     "title": "PicPals",
-    "src": "/src/assets/images/pink_gradient.png",
+    "src": "/images/pink_gradient.png",
     "technos": ["Flutter", "Express.js", "MongoDB"],
     "description": "time-based social network for artists",
-    "spline-url": "/src/assets/spline/picpals.splinecode",
-    "image": "/src/assets/images/picpals.png"
+    "spline-url": "/spline/picpals.splinecode",
+    "image": "/images/picpals.png"
   },
   {
     "title": "3D software maintenance",
-    "src": "/src/assets/images/red_gradient.png",
+    "src": "/images/red_gradient.png",
     "technos": ["cpp", "Ogre3D", "SQL"],
     "description": "internship at Ice Development",
-    "spline-url": "/src/assets/spline/cppproj.splinecode",
-    "image": "/src/assets/images/3dsoft.png"
+    "spline-url": "/spline/cppproj.splinecode",
+    "image": "/images/3dsoft.png"
   },
   {
     "title": "App for boaters",
-    "src": "/src/assets/images/blue_gradient.png",
+    "src": "/images/blue_gradient.png",
     "technos": ["Flutter", "NMEA2000"],
     "description": "front end mobile development at Amiltone",
     "image": ""
   },
   {
     "title": "This site",
-    "src": "/src/assets/images/yellow_gradient.png",
+    "src": "/images/yellow_gradient.png",
     "technos": ["Vue.js", "GSAP", "Figma"],
     "description": "design and development",
-    "image": "/src/assets/images/portfolio.png"
+    "image": "/images/portfolio.png"
   },
   {
     "title": "Remote Access Tool",
-    "src": "/src/assets/images/red_gradient.png",
+    "src": "/images/red_gradient.png",
     "technos": ["Rust", "TCP", "Shell"],
     "description": "Design & development of a RAT client controlled via instructions avaialable on a server.",
-    "image": "/src/assets/images/cuterat.png"
+    "image": "/images/cuterat.png"
   },
   {
     "title": "Homelab using Proxmox",
-    "src": "/src/assets/images/pink_gradient.png",
+    "src": "/images/pink_gradient.png",
     "technos": ["Proxmox", "VLAN", "Docker", "LXC", "VPN", "Reverse Proxy"],
     "description": "Deployment and self-hosted services",
-    "image": "/src/assets/images/homelab.png"
+    "image": "/images/homelab.png"
   }
 ]
