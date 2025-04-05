@@ -8,33 +8,27 @@ const projects = ref([]);
 
 onMounted(() => {
   projects.value = projectsData;
-  console.log(projects.value);
 });
 </script>
 
 <template>
-  <main>
-    <div v-for='(project, index) in projects' v-bind:key='index'>
-      <ProjectShowcase
-        style="grid-column: 2 / 10; margin-bottom: 141px"
-        preview-height="493px"
-        src="/src/assets/images/green_gradient.png"
-        technos={{project.technos}}
-        title="PEEKED"
-        description="engineering and development for a camera trap visualization app"
-        spline-url="/src/assets/spline/peeked.splinecode"
-        :is3D="true"
-        :on3d-loaded="
-          (app) => {
-            const phone = app.findObjectByName('phone')
-            gsap.to(phone.rotation, { y: Math.PI * 2, repeat: -1, duration: 25, ease: 'none' })
-          }
-        "
-      >
-      </ProjectShowcase>
-
-    </div>
-  </main>
+  <div class="projects-page">
+    <div class="projects-content" >
+      <h2>My projects </h2>
+      <div v-for='(project, index) in projects' :key='index'>
+        <ProjectShowcase
+            style="grid-column: 2 / 6; margin-bottom: 141px"
+            preview-height="300px"
+            :src="project.src"
+            :technos="project.technos"
+            :title="project.title"
+            :description="project.description"
+            :non3dSrc = "project.image"
+            >
+        </ProjectShowcase>
+        </div>
+    </div >
+  </div >
 </template>
 
 <style>
@@ -48,11 +42,23 @@ header {
 
 </style>
 <style scoped>
-main {
+.projects-page {
   overflow: hidden;
-  height: 100vh;
   background-color: var(--background-dark);
   color: var(--background-light);
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  min-height: 100vh;
+  gap: 20px;
+  padding-top: 95px;
+  padding-bottom: 105px;
 }
 
+.projects-content {
+  grid-column: 2 / 8;
+}
+h2 {
+  height: min-content;
+  margin-bottom: 119px;
+}
 </style>

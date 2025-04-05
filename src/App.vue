@@ -1,8 +1,25 @@
 <script setup>
+  import {ref, onMounted, onBeforeUnmount}  from 'vue';
+  import UnavailablePage from './components/UnavailablePage.vue'
+
+const isAvailable = ref(true);
+const updateAvailabilty = () => {
+  isAvailable.value = window.innerWidth >=900;
+}
+
+onMounted(() => {
+  window.addEventListener('resize', updateAvailabilty);
+});
+
+onBeforeUnmount(()=>{
+  window.removeEventListener('resize', updateAvailabilty);
+});
+
 </script>
 
 <template>
-  <router-view></router-view>
+  <router-view v-if="isAvailable" ></router-view>
+  <UnavailablePage v-else></UnavailablePage>
 </template>
 
 <style>

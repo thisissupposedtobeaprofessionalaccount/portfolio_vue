@@ -12,7 +12,6 @@ import WorkPage from './WorkPage.vue'
   <header>
     <StickyHeader></StickyHeader>
   </header>
-
   <main>
     <LandingPage></LandingPage>
     <IntroPage></IntroPage>
@@ -24,7 +23,7 @@ import WorkPage from './WorkPage.vue'
 </template>
 
 <style>
-main {
+header {
   --selectedBackgroundColor: transparent;
   z-index: 999;
   position: sticky;

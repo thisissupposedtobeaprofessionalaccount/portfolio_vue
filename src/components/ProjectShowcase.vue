@@ -3,17 +3,18 @@ import TechChip from './TechChip.vue'
 import { onMounted, ref } from 'vue'
 import { Application } from '@splinetool/runtime'
 
-const props = defineProps([
-  'src',
-  'title',
-  'description',
-  'technos',
-  'previewHeight',
-  'gridWidth',
-  'splineUrl',
-  'is3D',
-  'on3dLoaded'
-])
+const props = defineProps({
+  src : String,
+  title : String,
+  description: String,
+  technos: Object,
+  previewHeight : [Number, String],
+  gridWidth : [Number, String],
+  splineUrl: String,
+  is3D : Boolean,
+  on3dLoaded :Function,
+  non3dSrc : {type: String, default : ""}
+})
 
 
 const canvas3d = ref(null)
@@ -22,17 +23,20 @@ onMounted(async () => {
   const app = new Application(canvas3d.value)
   app.load(props.splineUrl).then(() => props.on3dLoaded(app))
 })
+
+const hasImg = props.non3dSrc.length !== 0 ;
 </script>
 <template>
   <div class="project-showcase">
     <div class="preview">
-      <img :src="src" />
+      <img class="bg" :src="src" />
       <canvas ref="canvas3d" v-if="is3D"></canvas>
-      <img :src="non3dSrc" v-if="!is3D" />
+      <div class="img-container">
+        <img class="image-foregnd" :src="non3dSrc" v-if="!is3D && hasImg" />
+      </div>
     </div>
     <div class="tech">
-      <TechChip v-for="techno in technos" :key="techno">
-        {{ techno }}
+      <TechChip v-for="techno in technos" :key="techno" :title = "techno">
       </TechChip>
     </div>
     <div class="explanations">
@@ -62,7 +66,7 @@ onMounted(async () => {
   border-radius: 15px;
   position: relative;
 }
-.preview img {
+.preview .bg {
   height: 100%;
   width : 100%;
   object-fit: cover;
@@ -89,5 +93,19 @@ canvas {
 .description {
   font-size: 32px;
   width: 80%;
+}
+
+
+.img-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-foregnd{
+  position: absolute;
+  height:60%;
 }
 </style>

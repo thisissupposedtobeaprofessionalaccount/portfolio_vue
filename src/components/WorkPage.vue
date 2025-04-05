@@ -77,7 +77,7 @@ onMounted(() => {
         title="PEEKED"
         description="engineering and development for a camera trap visualization app"
         spline-url="/src/assets/spline/peeked.splinecode"
-        :is3D="true"
+        is3D
         :on3d-loaded="
           (app) => {
             const phone = app.findObjectByName('phone')

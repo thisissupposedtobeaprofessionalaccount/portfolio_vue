@@ -1,9 +1,10 @@
 <script setup>
 import themeColor from '@/assets/themeColors.json'
+const props = defineProps(['title']);
 </script>
 <template>
   <div class="chip">
-    <slot />
+    {{ title }}
   </div>
 </template>
 <style scoped>
@@ -12,7 +13,7 @@ import themeColor from '@/assets/themeColors.json'
   padding: 7px 25px;
   border-radius: 50px;
   border: solid 2px v-bind('themeColor.white');
-  width: min-content;
+  width: fit-content;
   transition: all 0.2s ease;
   max-height: 55px;
 }
