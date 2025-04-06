@@ -10,14 +10,21 @@ import ProjectDetailsPage from './components/ProjectDetailsPage.vue'
 const pinia = createPinia()
 
 const routes = [
-  { path: '/', component: MainPage },
-  { path: '/projects', component: ProjectDetailsPage },
+  { path: '/', component: MainPage , meta : { title : "Hugo's portfolio" }},
+  { path: '/projects', component: ProjectDetailsPage, meta : { title : "Projects" } },
 ]
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
 })
+
+router.afterEach((to) => {
+  if (to.meta && to.meta.title) {
+    document.title = to.meta.title;
+  }
+});
+
 const app = createApp(App)
 
 app.use(router)

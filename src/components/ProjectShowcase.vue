@@ -13,18 +13,21 @@ const props = defineProps({
   splineUrl: String,
   is3D : Boolean,
   on3dLoaded :Function,
-  non3dSrc : {type: String, default : ""}
+  non3dSrc : {type: String, default : ""},
+  link: {type: String, default: ""}
 })
 
 
 const canvas3d = ref(null)
 
+const hasImg = props.non3dSrc.length !== 0 ;
+
 onMounted(async () => {
   const app = new Application(canvas3d.value)
-  app.load(props.splineUrl).then(() => props.on3dLoaded(app))
+  if(props.is3D){
+    app.load(props.splineUrl).then(() => props.on3dLoaded(app))
+  }
 })
-
-const hasImg = props.non3dSrc.length !== 0 ;
 
 </script>
 <template>
@@ -41,7 +44,7 @@ const hasImg = props.non3dSrc.length !== 0 ;
       </TechChip>
     </div>
     <div class="explanations">
-      <h3 class="title">{{ title }}</h3>
+      <h3 class="title">{{ title }} <a :href="link" v-if:="link.length !== 0" target="_blank"> <img src="/images/arrow-up-right-square.svg" alt="link to project"> </a></h3> 
       <div class="description">{{ description }}</div>
     </div>
   </div>
@@ -107,6 +110,8 @@ canvas {
 
 .image-foregnd{
   position: absolute;
-  height:60%;
+  max-height:60%;
+  max-width:60%;
+
 }
 </style>

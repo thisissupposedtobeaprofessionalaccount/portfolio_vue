@@ -9,6 +9,7 @@ const projects = ref([]);
 onMounted(() => {
   projects.value = projectsData;
 });
+
 </script>
 
 <template>
@@ -24,6 +25,7 @@ onMounted(() => {
             :title="project.title"
             :description="project.description"
             :non3dSrc = "project.image"
+            :link = "project.link"
             >
         </ProjectShowcase>
         </div>

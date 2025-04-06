@@ -77,7 +77,7 @@ onMounted(() => {
         title="PEEKED"
         description="engineering and development for a camera trap visualization app"
         spline-url="/spline/peeked.splinecode"
-        is3D
+        is3D = true
         :on3d-loaded="
           (app) => {
             const phone = app.findObjectByName('phone')
@@ -94,7 +94,8 @@ onMounted(() => {
         title="PicPals"
         description="time-based social network for artists"
         spline-url="/spline/picpals.splinecode"
-        :is3D="false"
+        is3D="true"
+        non3dSrc="/images/picpals.png"
       ></ProjectShowcase>
       <ProjectShowcase
         style="grid-column: 6 / 11"
@@ -122,41 +123,43 @@ onMounted(() => {
         :is3D="false"
       ></ProjectShowcase>
       <ProjectShowcase
-        style="grid-column: 8 / 11; margin-bottom: 250px"
+        style="grid-column: 8 / 11; margin-bottom: 100px"
         preview-height="560px"
         src="/images/yellow_gradient.png"
         :technos="['Vue.js', 'GSAP', 'Figma']"
         title="This site"
         description="design and development"
         :is3D="false"
+        non3dSrc="/images/portfolio.png"
       ></ProjectShowcase>
-    </div>
-    <a><router-link to='/projects'>Discover more.</router-link></a>
+    <a class="discover-btn"><router-link to='/projects'>discover more.</router-link></a>
   </div>
+    </div>
 </template>
 
 <style scoped>
+.discover-btn{
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  background: var(--grey);
+  color: var(--background-light);
+  box-shadow: 6px 6px 0px 0px var(--lighter-dark);
+  transition: all ease 0.5s;
+}
+
+.discover-btn:hover{
+  transform: translate(-5px, -5px);
+  box-shadow: 11px 11px 0px 0px var(--lighter-dark);
+  transition: all ease 0.5s;
+}
 a {
   grid-column: 10 / 11;
   display: inline-block;
   text-decoration: none;
   color: inherit;
   transition: color ease 0.2s;
-}
-a::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: v-bind('themeColor.accent');
-  transition: width 0.3s;
-}
-a:hover::after {
-  text-decoration: none;
-  color: v-bind('themeColor.accent');
-  transition: color ease 0.2s;
-  width: 100%;
-  transition: width 0.3s;
 }
 
 .work-page {

@@ -5,7 +5,9 @@
     "technos": ["Vue.js", "Express.js", "Docker", "Figma", "ESP-8266"],
     "description": "engineering and development for a camera trap visualization app",
     "spline-url": "/spline/peeked.splinecode",
-    "image": "/images/peeked.png"
+    "image": "/images/peeked.png",
+    "link": "https://github.com/thisissupposedtobeaprofessionalaccount/peeked-front"
+
   },
   {
     "title": "PicPals",
@@ -13,7 +15,8 @@
     "technos": ["Flutter", "Express.js", "MongoDB"],
     "description": "time-based social network for artists",
     "spline-url": "/spline/picpals.splinecode",
-    "image": "/images/picpals.png"
+    "image": "/images/picpals.png",
+    "link": "https://github.com/valdoin/PicPals"
   },
   {
     "title": "3D software maintenance",
@@ -27,28 +30,36 @@
     "title": "App for boaters",
     "src": "/images/blue_gradient.png",
     "technos": ["Flutter", "NMEA2000"],
-    "description": "front end mobile development at Amiltone",
-    "image": ""
+    "description": "front end mobile development at Amiltone"
   },
   {
     "title": "This site",
     "src": "/images/yellow_gradient.png",
     "technos": ["Vue.js", "GSAP", "Figma"],
     "description": "design and development",
-    "image": "/images/portfolio.png"
+    "image": "/images/portfolio.png",
+    "link": "https://github.com/thisissupposedtobeaprofessionalaccount/portfolio_vue"
   },
   {
     "title": "Remote Access Tool",
     "src": "/images/red_gradient.png",
     "technos": ["Rust", "TCP", "Shell"],
     "description": "Design & development of a RAT client controlled via instructions avaialable on a server.",
-    "image": "/images/cuterat.png"
+    "image": "/images/cuterat.png",
+    "link": "https://github.com/thisissupposedtobeaprofessionalaccount/cute-rat"
   },
   {
     "title": "Homelab using Proxmox",
     "src": "/images/pink_gradient.png",
     "technos": ["Proxmox", "VLAN", "Docker", "LXC", "VPN", "Reverse Proxy"],
-    "description": "Deployment and self-hosted services",
+    "description": "Network architecture, deployment and self-hosted services",
     "image": "/images/homelab.png"
+  },
+  {
+    "title": "Whoop box",
+    "src": "/images/yellow_gradient.png",
+    "technos": ["Fusion360", "3D-printing", "Project management"],
+    "description": "Designing of a 3D-printed case aiming to store a micro drone and as much 1s LiPo batteries with the fewest space possible.",
+    "link": "https://www.printables.com/model/1211120-whoop-box-65"
   }
 ]

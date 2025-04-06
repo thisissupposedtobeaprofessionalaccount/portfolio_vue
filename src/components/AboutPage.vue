@@ -65,8 +65,8 @@ onMounted(() => {
       <div class="article">
         <div class="image-container">
           <img
-            src="https://global-uploads.webflow.com/63bb7d51076d755de475e3a3/63be715117f71cb9333928f1_456841119-min.jpeg"
-            alt=""
+            src="/images/lyon.jpg"
+            alt="a forest view from the sky."
           />
         </div>
         <div class="text">
@@ -129,9 +129,9 @@ h2 {
   justify-content: space-between;
 }
 .image-container {
-  height: 0;
-  width: calc(43% - 20px);
-  padding-bottom: calc(43% - 20px);
+
+  width: fit-content;
+  height:fit-content;
   box-shadow: 6px 6px 0px 0px v-bind('themeColor.backgroundDark');
 
   border: solid 3px v-bind('themeColor.backgroundLight');
@@ -146,8 +146,7 @@ h2 {
 }
 
 .image-container > img {
-  object-fit: cover;
-  width: 110%;
+  object-fit: contain;
 }
 .text {
   padding: 20px;
