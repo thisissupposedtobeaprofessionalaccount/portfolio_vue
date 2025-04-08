@@ -114,4 +114,13 @@ canvas {
   max-width:60%;
 
 }
+@media screen and (max-width:900px) {
+  .tech{
+    display: none;
+  }
+  .description {
+    font-size: 24px;
+  }
+  
+}
 </style>

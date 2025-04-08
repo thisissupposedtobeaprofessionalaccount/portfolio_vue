@@ -4,7 +4,7 @@
 
 const isAvailable = ref(true);
 const updateAvailabilty = () => {
-  isAvailable.value = window.innerWidth >=900;
+  isAvailable.value = true// window.innerWidth >=900;
 }
 
 onMounted(() => {
@@ -34,7 +34,7 @@ header {
 </style>
 <style scoped>
 main {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 </style>

@@ -15,7 +15,6 @@ onMounted(() => {
       start: 'top center',
       end: 'bottom bottom',
       scrub: true,
-
       pinnedContainer: '.toolkit'
     },
     autoAlpha: 1,
@@ -142,6 +141,9 @@ h5 {
   width: 250px;
 }
 
+.toolkit-line {
+  margin-top: 0px;
+}
 .toolkit-line:nth-child(1) .sector:nth-of-type(1) {
   width: 49%;
 }
@@ -155,5 +157,52 @@ h5 {
 
 .toolkit-line:nth-child(2) .sector.sector:nth-of-type(3) {
   width: 18%;
+}
+
+@media screen and (max-width: 900px) {
+.toolkit {
+  gap: 0px;
+}
+  .sector {
+    visibility: visible;
+    transform: translateY(0px);
+    margin-top: 50px;
+  }
+.sector-content {
+  width: 100%;
+  font-variation-settings: 'wght' 700;
+  font-size: 23px;
+  color: v-bind('themeColor.accent');
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.sector-content p {
+  width: fit-content;
+}
+.toolkit-line {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+}
+.toolkit-line:nth-child(1) .sector:nth-of-type(1) {
+  width: 100%;
+}
+.toolkit-line:nth-child(1) .sector:nth-of-type(2) {
+  width: 100%;
+}
+
+.toolkit-line:nth-child(2) .sector{
+  width: 100%;
+}
+
+.toolkit-line .sector{
+  width: 100%
+}
+.toolkit-line:nth-child(2) .sector.sector:nth-of-type(3) {
+  width: 100%;
+}
+
 }
 </style>

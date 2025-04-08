@@ -1,5 +1,6 @@
 @import './base.css';
 
+
 h1 {
   font-family: 'Clash Display Variable';
   font-size: 128px;
@@ -34,4 +35,21 @@ h5 {
 ::selection {
   background-color: #aa988c;
   color: #fffdf1;
+}
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  h3 {
+    font-size: 45px;
+  }
+
+  h5 {
+    font-size: 15px;
+  }
 }

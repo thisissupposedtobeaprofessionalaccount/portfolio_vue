@@ -63,4 +63,15 @@ h2 {
   height: min-content;
   margin-bottom: 119px;
 }
+@media screen and (max-width:900px) {
+.projects-page {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.projects-content {
+  width: 80%;
+}
+  
+}
 </style>

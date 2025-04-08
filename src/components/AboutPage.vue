@@ -156,4 +156,29 @@ h2 {
   box-shadow: 6px 6px 0px 0px v-bind('themeColor.backgroundDark');
   background-color: v-bind('themeColor.backgroundLight');
 }
+
+@media screen and (max-width:900px) {
+  .text {
+    font-size: 15px;
+    padding: 20px;
+    font-variation-settings: 'wght' 500;
+    width: 35%;
+    box-shadow:none;
+    background-color:inherit;
+  }
+  .article{
+    width: max-content;
+    flex-direction: column;
+  }
+.image-container {
+
+  width: 300px;
+  height:fit-content;
+  box-shadow: 6px 6px 0px 0px v-bind('themeColor.backgroundDark');
+
+  border: solid 3px v-bind('themeColor.backgroundLight');
+  overflow: hidden;
+  transition: all ease 0.5s;
+}
+}
 </style>

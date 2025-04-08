@@ -115,4 +115,38 @@ h2 {
 .scroll-invite p {
   width: 255px;
 }
+
+@media screen and (max-width: 900px) {
+
+.bottom-row {
+  color: v-bind('themeColor.white');
+  grid-column: 2 / 11;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom-row > p {
+  width: max-content;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.scroll-invite {
+  width: 192px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  background: var(--grey);
+  box-shadow: 6px 6px 0px 0px var(--lighter-dark);
+  margin-top: 142px;
+  margin-left: 137px;
+}
+.scroll-invite > p {
+  width: fit-content;
+}
+  
+}
+
 </style>

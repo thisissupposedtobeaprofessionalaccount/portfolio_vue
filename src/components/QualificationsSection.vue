@@ -79,4 +79,17 @@ h5 {
 .skill-card:nth-child(4) {
   min-width: 39%;
 }
+@media screen and (max-width:900px) {
+.capacities .skill-card {
+  position: relative;
+  visibility: visible;
+}
+.skill-card:nth-child(odd) {
+  transform: translateX(0px);
+}
+.skill-card:nth-child(even) {
+  transform: translateX(0px);
+}
+  
+}
 </style>

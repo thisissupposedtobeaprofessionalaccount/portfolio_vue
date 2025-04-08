@@ -121,6 +121,7 @@ onMounted(() => {
   height: min-content;
 }
 h2 {
+  color: v-bind('themeColor.black');
   visibility: hidden;
   transform: translateY(-50px);
   grid-column: 1 / 10;
@@ -139,5 +140,21 @@ h2 {
 
 #contact-panel {
   grid-column: 9;
+}
+
+@media screen and (max-width:900px) {
+h2 {
+  visibility: visible;
+  transform: translateY(-50px);
+  grid-column: 1 / 10;
+  height: fit-content;
+}
+.contact-content {
+  grid-column: 2 / 11;
+  display: flex;
+  flex-direction: column;
+  height: min-content;
+}
+  
 }
 </style>

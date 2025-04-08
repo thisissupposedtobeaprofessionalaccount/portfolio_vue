@@ -18,4 +18,9 @@ import themeColor from '@/assets/themeColors.json'
   font-variation-settings: 'wght' 700;
   font-size: 45px;
 }
+@media screen and (max-width:900px) {
+.skill-card {
+  font-size: 23px;
+}
+}
 </style>

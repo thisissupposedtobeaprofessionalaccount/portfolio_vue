@@ -89,4 +89,24 @@ onMounted(() => {
   width: 75%;
   height: fit-content;
 }
+@media screen and (max-width:900px) {
+.welcome-container {
+  height: 380px;
+}
+.echo-container{
+  align-self: center;
+  order: 2
+}
+
+#portfolio-1 {
+  font-size: 32px;
+}
+#portfolio-2 {
+  font-size: 32px;
+}
+#portfolio-3 {
+  font-size: 32px;
+}
+  
+}
 </style>

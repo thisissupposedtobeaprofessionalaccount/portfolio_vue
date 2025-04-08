@@ -69,6 +69,7 @@ onMounted(() => {
   <div class="work-page">
     <div class="work-content">
       <h2>MY WORK</h2>
+      <p class="mobile-ad">You can see a better display of my work on the larger screen version of this site !</p>
       <ProjectShowcase
         style="grid-column: 2 / 10; margin-bottom: 141px"
         preview-height="493px"
@@ -138,6 +139,9 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.mobile-ad{
+  display: none;
+}
 .discover-btn{
   margin-top: 10px;
   padding: 10px;
@@ -182,4 +186,32 @@ h2 {
   height: min-content;
   margin-bottom: 119px;
 }
+
+@media screen and (max-width:900px) {
+.mobile-ad{
+  font-size: 23px;
+  display: block;
+  grid-column: 1 / 11;
+  height: fit-content;
+}
+
+.discover-btn{
+  margin-top: 10px;
+
+  grid-column: 1 / 11;
+  height: min-content;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  background: var(--grey);
+  color: var(--background-light);
+  box-shadow: 6px 6px 0px 0px var(--lighter-dark);
+  transition: all ease 0.5s;
+}
+  
+  .project-showcase {
+    display: none;
+  }
+}
+
 </style>
