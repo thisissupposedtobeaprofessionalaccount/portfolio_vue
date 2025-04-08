@@ -31,10 +31,10 @@ header {
   left: 0;
   background-color: var(--background-light);
 }
-</style>
-<style scoped>
 main {
   overflow-x: hidden;
 }
+</style>
+<style scoped>
 
 </style>
